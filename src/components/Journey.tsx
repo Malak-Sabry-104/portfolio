@@ -25,6 +25,30 @@ const Journey = () => {
               </p>{" "}
               {/* provider */}
             </div>
+            <div className="card bg-white/10 py-5 w-[100%] px-4 ">
+              <span className="text-sm gradient-text font-semibold italic ">
+                May 2025
+              </span>{" "}
+              {/* date */}
+              <h4 className="font-semibold ">React Course</h4>
+              {/* coursename */}
+              <p className="text-sm  mt-2 text-white/40 ">
+              Learning with Mosh
+              </p>{" "}
+              {/* provider */}
+            </div>
+            <div className="card bg-white/10 py-5 w-[100%] px-4 ">
+              <span className="text-sm gradient-text font-semibold italic ">
+              April 2025
+              </span>{" "}
+              {/* date */}
+              <h4 className="font-semibold ">TailwindCss</h4>
+              {/* coursename */}
+              <p className="text-sm  mt-2 text-white/40 ">
+              Learning with Mosh
+              </p>{" "}
+              {/* provider */}
+            </div>
           </div>
           <div className="achievements w-[50%] gap-3 flex flex-col mb-3">
             <h3 className="p-2 text-2xl text-center text-white/70">
@@ -42,6 +66,20 @@ const Journey = () => {
               <p className="text-sm  mt-2 text-white/40 ">
                 A 2 days of a hackclub hackathon, where high school students are
                 building projects that support youth and entrepreneurs.
+              </p>
+              {/* description */}
+            </div>
+            <div className="card bg-white/10 py-3 w-[100%] px-4">
+              <span className="text-sm gradient-text font-semibold italic">
+              July 2024
+              </span>
+              {/* date */}
+              <h4 className="font-semibold">
+              53rd place at ECPC 
+              </h4>
+              {/* title */}
+              <p className="text-sm  mt-2 text-white/40 ">
+              A competetive Programing contest
               </p>
               {/* description */}
             </div>

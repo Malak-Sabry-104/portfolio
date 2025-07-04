@@ -20,7 +20,7 @@ const Hero = () => {
               This is Malak Sabry
             </h4>
             <h1 className="text-5xl font-bold pt-1 pb-5">
-              UI/UX and Graphic Designer
+              Front-End Developer
             </h1>
             <p className="capitalize flex items-center justify-start text-[14px]">
               With {/* Experience Badge */}
@@ -28,7 +28,7 @@ const Hero = () => {
                 className="bg-ring/10 backdrop-blur-md
                text-white px-2 rounded-xl ring-1 ring-white/30 font-semibold shadow-sm mx-2"
               >
-                +5
+                +2
               </span>
               years of Experience
             </p>

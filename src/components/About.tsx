@@ -21,7 +21,7 @@ const About = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequatur vel vero cumque molestiae perspiciatis delectus, ad
               iste odit voluptatibus magni eligendi ea alias facere laborum
-              exercitationem illo. Saepe natus aliquam in ex obcaecati earum
+              exercitati onem illo. Saepe natus aliquam in ex obcaecati earum
               odit tempore iste nemo tempora neque, eveniet voluptatibus officia
               provident sed, veritatis reiciendis eius rem at. Lorem ipsum dolor
               sit amet consectetur adipisicing elit. Tempora reiciendis nihil
@@ -34,9 +34,10 @@ const About = () => {
               <HashLink smooth={true} to="/#journey" className="link relative italic ">
                 Experiences
               </HashLink>
-              <a href="#" className="link relative italic ">
+              
+              <HashLink to="/#skills" smooth={true} className="link relative italic ">
                 Skills
-              </a>
+              </HashLink>
             </div>
             <div className="flex justify-center  items-center  gap-10 mt-9">
               <button

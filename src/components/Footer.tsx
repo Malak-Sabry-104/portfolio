@@ -1,8 +1,10 @@
 import { Mail } from "lucide-react";
 import { MapPin } from "lucide-react";
 import { Github, Linkedin } from "lucide-react";
+import { HashLink } from 'react-router-hash-link';
 
-import footerVideo from '../assets/blackhole.webm'
+import footerVideo from "../assets/blackhole.webm";
+import { toast } from "react-toastify";
 
 const Footer = () => {
   return (
@@ -43,25 +45,25 @@ const Footer = () => {
                   className=" hover:text-purple-400 transition-transform
                  hover:scale-105 list-none mb-1 text-white/60 text-md capitalize hover:underline"
                 >
-                  <a href="#">Home</a>
+                  <HashLink to="/">Home</HashLink>
                 </li>
                 <li
                   className=" hover:text-purple-400 transition-transform
                  hover:scale-105 list-none mb-1 text-white/60 text-md capitalize hover:underline"
                 >
-                  <a href="#">About</a>
+                  <HashLink to="/#about" smooth={true}>About</HashLink>
                 </li>
                 <li
                   className=" hover:text-purple-400 transition-transform 
                 hover:scale-105  list-none mb-1 text-white/60 text-md capitalize hover:underline"
                 >
-                  <a href="#">projects</a>
+                  <HashLink to="/#projects" smooth={true}>Projects</HashLink>
                 </li>
                 <li
                   className=" hover:text-purple-400 transition-transform 
                 hover:scale-105 hover:underline list-none mb-1 text-white/60 text-md capitalize"
                 >
-                  <a href="#">Contact</a>
+                  <HashLink to="/contact" smooth={true}>Contact</HashLink>
                 </li>
               </ul>
             </div>
@@ -122,10 +124,25 @@ const Footer = () => {
               &copy; 2025 Malak | portfolio. All rights reversed.
             </p>
             <div className="capitalize flex gap-7">
-              <a href="#" className="hove:underline"> Privacy Policy </a>
-              <a href="#" className="hove:underline"> Terms Of Services </a>
+              <a
+                href="#"
+                className="hove:underline"
+                onClick={() => {
+                  toast.dark("Coming Soon!");
+                }}
+              >
+                {" "}
+                Privacy Policy{" "}
+              </a>
+
+              <a href="#" className="hove:underline"   onClick={() => {
+                  toast.dark("Coming Soon!");
+                }}>
+                {" "}
+                Terms Of Services{" "}
+              </a>
             </div>
-          </div> 
+          </div>
         </footer>
       </section>
     </>
