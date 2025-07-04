@@ -1,8 +1,6 @@
 // import { AlignHorizontalDistributeCenter } from "lucide-react";
 import About from "./components/About";
 import EmblaCarousel from "./components/carousel";
-import ContactForm from "./components/ContactForm";
-import ErrorPage from "./components/ErrorPage";
 // import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Journey from "./components/Journey";

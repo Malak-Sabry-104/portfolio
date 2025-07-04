@@ -2,6 +2,8 @@ import { Mail } from "lucide-react";
 import { MapPin } from "lucide-react";
 import { Github, Linkedin } from "lucide-react";
 
+import footerVideo from '../assets/blackhole.webm'
+
 const Footer = () => {
   return (
     <>
@@ -12,7 +14,7 @@ const Footer = () => {
           muted
           className="z-90 w-[100%] object-cover h-[80vh] absolute "
         >
-          <source src="./src/assets/blackhole.webm" type="video/webm" />
+          <source src={footerVideo} type="video/webm" />
         </video>
         <footer className="flex flex-col  gap-7 justify-center items-center overflow-hidden w-[100%] ">
           <div
