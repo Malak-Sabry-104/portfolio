@@ -12,7 +12,7 @@ import '../embla.css'
 // } from './EmblaCarouselArrowButtons'
 
 type PropType = {
-  slides: number[]
+  slides: unknown[]
   options?: EmblaOptionsType
 }
 
@@ -72,9 +72,9 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
     <div className="embla my-5 mx-auto relative">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          {slides.map((index) => (
-            <div className="embla__slide" key={index}>
-              <img src="https://placehold.co/600x400" className='rounded-2xl' alt="" />
+          {slides.map((cert) => (
+            <div className="embla__slide" key={cert.id}>
+              <img src={cert.image} className='rounded-2xl' alt="" />
             </div>
           ))}
         </div>

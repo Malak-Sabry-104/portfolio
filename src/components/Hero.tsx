@@ -2,6 +2,7 @@ import { Mail, Github, Facebook, Linkedin } from "lucide-react";
 import images from "../assets/images.png";
 import { toast } from "react-toastify";
 import { HashLink } from "react-router-hash-link";
+import GradientBtn from "./GradientButton";
 
 const Hero = () => {
   return (
@@ -35,14 +36,13 @@ const Hero = () => {
 
           {/* CTA Btns  */}
           <div className="btns-group flex gap-4 mt-6">
-            <button
-              className="bg-gradient px-4 py-2 rounded-xl backdrop-blur-md text-purple-100 ring-1 ring-purple-300/30 hover:scale-[1.04] shadow-md  cursor-pointer"
+            <GradientBtn
               onClick={() => {
                 toast.dark("Hi!!");
               }}
             >
               Say Hello
-            </button>
+            </GradientBtn>
             <HashLink
               className="border-gradient px-4 py-2 rounded-xl text-purple-100 shadow-md   cursor-pointer hover:scale-[1.04]"
               to="/#projects"

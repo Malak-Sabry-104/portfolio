@@ -1,45 +1,12 @@
-import { useState } from "react";
-import {
-  SiHtml5,
-  SiCss3,
-  SiJavascript,
-  SiTypescript,
-  SiPython,
-  SiDart,
-  SiCplusplus,
-  SiReact,
-  SiTailwindcss,
-  SiBootstrap,
-  SiGithub,
-  SiNpm,
-  SiVite,
-  SiMysql,
-  SiFigma,
-  SiAdobephotoshop,
-  SiAdobeillustrator,
-} from "react-icons/si";
-import { BiLogoVisualStudio } from "react-icons/bi";
-const Skills = () => {
-  const [skills, setSkills] = useState([
-    { name: "HTML", icon: <SiHtml5 /> },
-    { name: "CSS", icon: <SiCss3 /> },
-    { name: "JavaScript", icon: <SiJavascript /> },
-    { name: "TypeScript", icon: <SiTypescript /> },
-    { name: "Python", icon: <SiPython /> },
-    { name: "Dart", icon: <SiDart /> },
-    { name: "C++", icon: <SiCplusplus /> },
-    { name: "Bootstrap", icon: <SiBootstrap /> },
-    { name: "Tailwind", icon: <SiTailwindcss /> },
-    { name: "React", icon: <SiReact /> },
-    { name: "GitHub", icon: <SiGithub /> },
-    { name: "VS Code", icon: <BiLogoVisualStudio /> },
-    { name: "npm", icon: <SiNpm /> },
-    { name: "Vite", icon: <SiVite /> },
-    { name: "MySQL", icon: <SiMysql /> },
-    { name: "Figma", icon: <SiFigma /> },
-    { name: "Photoshop", icon: <SiAdobephotoshop /> },
-    { name: "Illustrator", icon: <SiAdobeillustrator /> },
-  ]);
+import type { JSX } from "react";
+
+interface Props{
+  skills:{
+    icon: JSX.Element;
+    name: string;
+  }[]
+}
+const Skills = ({skills}:Props) => {
   return (
     <>
       <section id="skills">
