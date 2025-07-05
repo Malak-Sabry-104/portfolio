@@ -14,7 +14,7 @@ const Hero = () => {
       >
         <div className="glow"></div>
         {/* Left Side */}
-        <div className="left-side  z-100 w-[50%] ml-[50px] flex flex-col justify-center">
+        <div className="left-side  w-[50%] ml-[50px] flex flex-col justify-center">
           <div className="w-[80%] text-start p-2">
             <h4 className="capitalize font-semibold text-xs italic">
               This is Malak Sabry

@@ -5,12 +5,6 @@ import AutoScroll from "embla-carousel-auto-scroll";
 
 import "../embla.css";
 
-// import {
-//   NextButton,
-//   PrevButton,
-//   usePrevNextButtons
-// } from './EmblaCarouselArrowButtons'
-
 type PropType = {
   slides: unknown[];
   options?: EmblaOptionsType;
@@ -20,17 +14,10 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   const { slides, options } = props;
 
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [
-    AutoScroll({ playOnInit: true }), // ← تشغيل تلقائي عند بداية التشغيل
+    AutoScroll({ playOnInit: true }),
   ]);
 
   const [isPlaying, setIsPlaying] = useState(false);
-
-  // const {
-  //   prevBtnDisabled,
-  //   nextBtnDisabled,
-  //   onPrevButtonClick,
-  //   onNextButtonClick
-  // } = usePrevNextButtons(emblaApi)
 
   const onButtonAutoplayClick = useCallback(
     (callback: () => void) => {
@@ -83,23 +70,6 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
       </div>
       <div className="top-0 h-[100%] w-50 absolute bg-gradient-to-r from-[#0d0b1f]/100 to-transparent z-50"></div>
       <div className="top-0 h-[100%] w-50 absolute bg-gradient-to-l right-0 from-[#0d0b1f]/100 to-transparent z-50"></div>
-
-      {/* <div className="embla__controls">
-        <div className="embla__buttons">
-          <PrevButton
-            onClick={() => onButtonAutoplayClick(onPrevButtonClick)}
-            disabled={prevBtnDisabled}
-          />
-          <NextButton
-            onClick={() => onButtonAutoplayClick(onNextButtonClick)}
-            disabled={nextBtnDisabled}
-          />
-        </div>
-
-        <button className="embla__play" onClick={toggleAutoplay} type="button">
-          {isPlaying ? 'Stop' : 'Start'}
-        </button>
-      </div> */}
     </div>
   );
 };

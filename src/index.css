@@ -298,3 +298,11 @@ nav a::after {
     transform: scale(1);
   }
 }
+#projects .border-gradient {
+  border: 3px solid transparent;
+  /* transparent bg (make it looks like the body bg*/
+  background: linear-gradient(#1a1a1a, #1a1a1a) padding-box,
+    /* gradient border */
+      linear-gradient(90deg, #614385, #516395, rgba(139, 92, 246, 0.5))
+      border-box;
+}
