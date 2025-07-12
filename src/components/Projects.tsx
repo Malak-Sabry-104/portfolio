@@ -18,7 +18,7 @@ const ProjectCard = () => {
   return (
     <>
     <main>
-      <section className="pt-[8rem] grid  md:grid-cols-3  justify-center  2xl:grid-cols-4  gap-16 px-16" id="projects">
+      <section className="pt-[8rem] grid grid-cols-1  md:grid-cols-3  justify-center  2xl:grid-cols-4  gap-16 px-16" id="projects">
       
         {projects.map((proj) => (
 
