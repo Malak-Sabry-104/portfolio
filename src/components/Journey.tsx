@@ -34,7 +34,7 @@ const Journey = () => {
               <h4 className="font-semibold ">React Course</h4>
               {/* coursename */}
               <p className="text-sm  mt-2 text-white/40 ">
-              Learning with Mosh
+              Code With Mosh
               </p>{" "}
               {/* provider */}
             </div>
@@ -46,7 +46,7 @@ const Journey = () => {
               <h4 className="font-semibold ">TailwindCss</h4>
               {/* coursename */}
               <p className="text-sm  mt-2 text-white/40 ">
-              Learning with Mosh
+              Code With Mosh
               </p>{" "}
               {/* provider */}
             </div>
@@ -61,7 +61,7 @@ const Journey = () => {
               </span>
               {/* date */}
               <h4 className="font-semibold">
-                2nd place at Scrapyard Alexandria
+                2nd place at Scrapyard Alex
               </h4>
               {/* title */}
               <p className="text-sm  mt-2 text-white/40 ">

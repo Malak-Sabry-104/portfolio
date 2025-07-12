@@ -1,5 +1,5 @@
 import { Mail, Github, Facebook, Linkedin } from "lucide-react";
-import images from "../assets/images.png";
+import images from "../assets/photo_6021628713059338626_y.jpg";
 import { toast } from "react-toastify";
 import { HashLink } from "react-router-hash-link";
 import GradientBtn from "./GradientButton";
@@ -89,12 +89,12 @@ const Hero = () => {
         {/* Right Side */}
         <div
           className="mr-[50px] right-content flex justify-between
-         items-start gap-6 w-[50%]"
+         items-center gap-6 w-[50%]"
         >
           <img
             src={images}
             alt="Hero"
-            className=" w-[260px] rounded-3xl ring-2 ring-purple-500/30 "
+            className=" w-[290px] rounded-full z-10   ring-2 ring-purple-500/30 "
           />
 
           {/* Social Icons */}

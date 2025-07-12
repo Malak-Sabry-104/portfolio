@@ -1,5 +1,5 @@
 import { toast } from "react-toastify";
-import images from "../assets/images.png";
+import images from "../assets/photo_6021628713059338622_y.jpg";
 import { HashLink } from "react-router-hash-link";
 
 const About = () => {
@@ -11,18 +11,22 @@ const About = () => {
         </h1>
         <div className="justify-between  flex flex-col md:flex-row   pt-[20px]  pb-[50px] px-[50px]">
           <div className="left flex justify-center items-center mb-4  rounded-2xl ">
-            <img src={images} alt="" className="w-full  rounded-2xl" />
+            <img src={images} alt="" className="w-[250px]  rounded-2xl" />
           </div>
           <div className="border-r-2  border-purple-500/20 shadow-[0_0_7px_rgba(168,85,247,0.5)] rounded-xl p-[2px] "></div>
           <div className="right md:w-[77%] w-[100%] text-md p-4 flex flex-col items-start ">
             <p className="md:text-start text-center text-md">
-              I am Malak, a high school student, and I have always had a passion
-              for technology since I was young, but I started my journey since
-              the ninth grade of primary school. High school helped me and
-              guided me, and I started my journey in website development. I
-              participated in competitions, including ISEF, and worked on many
-              projects. I seek to be a full-stack developer and to learn more
-              skills and increase my programming experience.
+              I'm Malak Sabry, a high school student and passionate front-end
+              developer with a strong interest in UI/UX design. While my journey
+              with technology began earlier, I officially started exploring web
+              development in 9th grade. Since then, I’ve participated in several
+              competitions and worked on various projects that have shaped my
+              skills and creativity. High school has played a significant role
+              in supporting my learning journey. It allowed me to explore my
+              passion more deeply and provided a strong foundation in both
+              design and programming. I'm always eager to learn new technologies
+              and expand my knowledge, with the goal of becoming a full-stack
+              developer.
             </p>
             <div className="flex items-center gap-8 mt-4 justify-center">
               <HashLink
