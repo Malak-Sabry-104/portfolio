@@ -2,7 +2,7 @@ const ErrorPage = () => {
   return (
     <>
       <section id="error-wrapper" className="mb-[60px]  text-center ">
-        <h2 className="pulse text-white/40 tracking-wider mb-[2rem]  ">404</h2>
+        <h2 className="pulse text-white/40 tracking-wider mb-[2rem] pt-[100px] ">404</h2>
         <h1 className="py-[10px] mb-[1rem] ">Page Not Found</h1>
         <p className="mb-[2.5rem]">
           it seems the page you're looking for doesn't exist. Let's get you back
