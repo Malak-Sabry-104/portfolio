@@ -11,7 +11,7 @@ const Footer = () => {
     <>
       <section
         id="footer"
-        className="relative flex items-end mt-40 2xl:mt-200"
+        className="relative flex items-end  md:mt-80"
       >
         <video
           autoPlay
