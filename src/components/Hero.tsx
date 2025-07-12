@@ -1,6 +1,6 @@
 import { Mail, Github, Facebook, Linkedin } from "lucide-react";
 import me from "../assets/photo_6021628713059338626_y.jpg";
-import images from "../assets/photo_6021628713059338626_y.jpg";
+import images from "../assets/images.png";
 
 import { toast } from "react-toastify";
 import { HashLink } from "react-router-hash-link";
