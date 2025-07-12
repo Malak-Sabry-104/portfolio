@@ -3,31 +3,10 @@ import EmblaCarousel from "./components/carousel";
 import Hero from "./components/Hero";
 import Journey from "./components/Journey";
 import Skills from "./components/Skills";
-// import TechStack from "./components/TechStack"
 import type { EmblaOptionsType } from "embla-carousel";
-import {
-  SiHtml5,
-  SiCss3,
-  SiJavascript,
-  SiTypescript,
-  SiPython,
-  SiDart,
-  SiCplusplus,
-  SiReact,
-  SiTailwindcss,
-  SiBootstrap,
-  SiGithub,
-  SiNpm,
-  SiVite,
-  SiMysql,
-  SiFigma,
-  SiAdobephotoshop,
-  SiAdobeillustrator,
-} from "react-icons/si";
-import { BiLogoVisualStudio } from "react-icons/bi";
+
 import axios from "axios";
 import { useEffect, useState } from "react";
-import TechStack from './components/TechStack';
 
 export const instance = axios.create({
   baseURL: "https://malaksabry2.pythonanywhere.com/api/",
@@ -62,31 +41,11 @@ const App = () => {
       
 
       <About />
-      <EmblaCarousel slides={certs} options={OPTIONS} />
-{/* <TechStack/> */}
-      <Skills
-        skills={[
-          { name: "HTML", icon: <SiHtml5 /> },
-          { name: "CSS", icon: <SiCss3 /> },
-          { name: "JavaScript", icon: <SiJavascript /> },
-          { name: "TypeScript", icon: <SiTypescript /> },
-          { name: "Python", icon: <SiPython /> },
-          { name: "Dart", icon: <SiDart /> },
-          { name: "C++", icon: <SiCplusplus /> },
-          { name: "Bootstrap", icon: <SiBootstrap /> },
-          { name: "Tailwind", icon: <SiTailwindcss /> },
-          { name: "React", icon: <SiReact /> },
-          { name: "GitHub", icon: <SiGithub /> },
-          { name: "VS Code", icon: <BiLogoVisualStudio /> },
-          { name: "npm", icon: <SiNpm /> },
-          { name: "Vite", icon: <SiVite /> },
-          { name: "MySQL", icon: <SiMysql /> },
-          { name: "Figma", icon: <SiFigma /> },
-          { name: "Photoshop", icon: <SiAdobephotoshop /> },
-          { name: "Illustrator", icon: <SiAdobeillustrator /> },
-        ]}
-      />
-      <Journey />
+            <Journey />
+
+      <EmblaCarousel slides={certs} options={OPTIONS}  />
+<Skills/>
+    
     </>
   );
 };
