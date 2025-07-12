@@ -59,23 +59,24 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
 
   return (
     <>
-    <div className="embla  mt-[19rem] mx-auto relative">
-            <h1 className="text-center text-4xl font-semibold mb-4 ">My Certificates</h1>
+      <div className="embla  mt-[19rem] mx-auto relative">
+        <h1 className="text-center text-4xl font-semibold mb-9 ">
+          My Certificates
+        </h1>
 
-      <div className="embla__viewport" ref={emblaRef}>
-        <div className="embla__container">
-          {slides.map((cert) => (
-            <div className="embla__slide" key={cert.id}>
-              <img src={cert.image} className="rounded-2xl" alt="" />
-            </div>
-          ))}
+        <div className="embla__viewport" ref={emblaRef}>
+          <div className="embla__container">
+            {slides.map((cert) => (
+              <div className="embla__slide" key={cert.id}>
+                <img src={cert.image} className="rounded-2xl" alt="" />
+              </div>
+            ))}
+          </div>
         </div>
+        <div className="top-0 h-[100%] w-50 absolute bg-gradient-to-r from-[#0d0b1f]/100 to-transparent z-50"></div>
+        <div className="top-0 h-[100%] w-50 absolute bg-gradient-to-l right-0 from-[#0d0b1f]/100 to-transparent z-50"></div>
       </div>
-      <div className="top-0 h-[100%] w-50 absolute bg-gradient-to-r from-[#0d0b1f]/100 to-transparent z-50"></div>
-      <div className="top-0 h-[100%] w-50 absolute bg-gradient-to-l right-0 from-[#0d0b1f]/100 to-transparent z-50"></div>
-    </div>
     </>
-  
   );
 };
 
