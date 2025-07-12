@@ -17,7 +17,7 @@ const ProjectCard = () => {
 
   return (
     <>
-      <section className="pt-[8rem] grid md:grid-cols-3  justify-center gap-8 " id="projects">
+      <section className="pt-[8rem] grid md:grid-cols-3 2xl:grid-cols-4 justify-center gap-8 " id="projects">
         {projects.map((proj) => (
           <div className=" mx-[50px] mt-9
            relative w-[300px] rounded-3xl shadow-xl bg-[#1a1a1a]
