@@ -1,3 +1,5 @@
+import { HashLink } from "react-router-hash-link";
+
 const ErrorPage = () => {
   return (
     <>
@@ -9,18 +11,15 @@ const ErrorPage = () => {
           on track.
         </p>
         <div className="btns-group flex justify-center items-center gap-6">
-          <button
+          <HashLink
             className="bg-gradient px-4 py-2 rounded-xl backdrop-blur-md text-purple-100 ring-1 ring-purple-300/30 
         hover:scale-[1.04] shadow-md  cursor-pointer"
+        to={'/'}
+        smooth={true}
           >
             Return to HomePage
-          </button>
-          <button
-            className="border-gradient px-4 py-2 rounded-xl text-purple-100 shadow-md 
-          cursor-pointer hover:scale-[1.04]"
-          >
-            Explore Features
-          </button>
+          </HashLink>
+         
         </div>
       </section>
     </>
