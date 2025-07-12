@@ -24,7 +24,7 @@ const ProjectCard = () => {
 
           <div className="w-full h-full flex justify-center">
           <div className=" mx-[50px] mt-9
-           relative w-[300px] rounded-3xl shadow-xl bg-[#1a1a1a]
+           relative min-w-[300px] rounded-3xl shadow-xl bg-[#1a1a1a]
             text-white">
             <div className="absolute -top-5 left-1/2 -translate-x-1/2
              z-20 bg-purple-500/20 backdrop-blur-md p-2 rounded-xl
