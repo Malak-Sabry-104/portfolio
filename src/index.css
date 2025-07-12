@@ -151,8 +151,6 @@
   filter: blur(60px);
 }
 
-
-
 /* nav style */
 nav .nav-btn:hover {
   transform: scale(1.01);
@@ -322,8 +320,9 @@ nav a::after {
   #hero .btns-group button {
     width: 100%;
   }
-    #hero .btns-group a {
-text-align: center;  }
+  #hero .btns-group a {
+    text-align: center;
+  }
   #hero .client-card {
     width: 69%;
     margin-top: 20px;
@@ -333,4 +332,7 @@ text-align: center;  }
   #hero .count-info p {
     font-size: 13px;
   }
+}
+#footer .policy {
+  /* align-items: center !important; */
 }

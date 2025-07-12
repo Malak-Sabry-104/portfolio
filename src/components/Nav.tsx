@@ -89,8 +89,10 @@ const Nav = () => {
         className={`${
           show ? "rounded-b-none  " : " rounded2xl ring-2 ring-white/50"
         }
+         ${scroll.y > 120? 'backdrop-blur-md' : ''}
         flex md:hidden 
         px-3 justify-between 
+
       items-center rounded-b-2xl
         bg-white/20  fixed left-0 right-0 z-100`}
       >

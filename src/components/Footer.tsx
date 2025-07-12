@@ -21,8 +21,10 @@ const Footer = () => {
         >
           <source src={footerVideo} type="video/webm" />
         </video>
-        <footer className="flex flex-col flex-wrap gap-7
-         justify-center items-center overflow-hidden w-[100%] ">
+        <footer
+          className="flex flex-col flex-wrap gap-7
+         justify-center items-center overflow-hidden w-[100%] "
+        >
           <div
             className=" flex justify-between  flex-col md:flex-row z-100 
            bg-[#030014]/10 pt-4 pl-0 w-full lg:w-[90%] lg:mx-[50px] px-4 lg:px-0  backdrop-blur-xl "
@@ -134,10 +136,13 @@ const Footer = () => {
           w-[80%]  mx-[50px] pb-3  text-white/60
            justify-center items-center lg:justify-between lg:items-start"
           >
-            <p className="capitalize text-xs py-2">
-              &copy; 2025 Malak | portfolio. All rights reversed.
-            </p>
-            <div className="capitalize flex gap-7 text-xs ">
+            <div className="flex py-1 ">
+              <p className="capitalize text-xs ">
+                &copy; 2025 Malak | portfolio. All rights reversed.
+              </p>
+            </div>
+
+            <div className="capitalize flex gap-7 text-xs  py-1">
               <a
                 href="#"
                 className="hove:underline"
@@ -145,8 +150,7 @@ const Footer = () => {
                   toast.dark("Coming Soon!");
                 }}
               >
-                {" "}
-                Privacy Policy{" "}
+                Privacy Policy
               </a>
 
               <a
