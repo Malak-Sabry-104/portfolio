@@ -10,7 +10,7 @@ const Hero = () => {
       {/* Hero Sec  */}
       <section
         id="hero"
-        className="flex items-center justify-center gap-3 py-3 h-[70vh] "
+        className="flex items-center justify-center gap-3 py-3 h-[70vh]  "
       >
         <div className="glow"></div>
         {/* Left Side */}
@@ -44,44 +44,53 @@ const Hero = () => {
               Say Hello
             </GradientBtn>
             <HashLink
-              className="border-gradient px-4 py-2 rounded-xl text-purple-100 shadow-md   cursor-pointer hover:scale-[1.04]"
-              to="/#projects"
+              className="nav-btn border-gradient px-4 py-2
+               rounded-xl text-purple-100 shadow-md 
+                 cursor-pointer hover:scale-[1.04]"
+              to="/projects"
+              smooth={true}
             >
               See Projects
             </HashLink>
           </div>
 
           {/* Client Card*/}
-          <div className="client-card bg-white/10 backdrop-blur-md rounded-2xl flex w-[50%] my-4 px-4 py-5 shadow-lg ring-1 ring-white/10 justify-center items-center gap-3">
-            {/* Avatar Imgs */}
-            <div className="flex items-center space-x-[-15px] mb-4 pl-[10px]">
+          <div
+            className="client-card  client-card bg-white/10 backdrop-blur-md
+           rounded-2xl shadow-lg ring-1 ring-white/10  flex gap-5 w-[40%] mt-4 "
+          >
+            <div className="imgs flex p-2 rounded-2xl  space-x-[-15px]  pl-[14px] ">
               <img
                 src={images}
-                alt="Client 1"
-                className="rounded-full ring-2 ring-white w-[48px] h-[48px] z-30"
+                className="w-[50px] rounded-full ring-2 ring-white"
               />
               <img
                 src={images}
-                alt="Client 2"
-                className="rounded-full ring-2 ring-white w-[48px] h-[48px] z-20"
+                className="w-[50px] rounded-full ring-2 ring-white"
               />
               <img
                 src={images}
-                alt="Client 3"
-                className="rounded-full ring-2 ring-white w-[48px] h-[48px] z-10"
+                className="w-[50px] rounded-full ring-2 ring-white"
               />
             </div>
-
-            {/* Client Count Info */}
-            <div className="bg-purple-200/40 text-white px-4 py-2 rounded-xl text-center shadow-inner ring-1 ring-white/10 cursor-pointer">
-              <span className="font-semibold text-lg">+44</span>
-              <p className="text-xs text-white/80 mt-1">Recent Clients</p>
+            <div
+              className="count-info bg-purple-200/40 text-white
+           rounded-xl text-center shadow-inner ring-1
+              ring-white/10 cursor-pointer w-[40%] my-2 mr-2 flex  flex-col justify-center items-center"
+            >
+              <span className="w-[100%] text-center font-semibold text-lg">
+                +44
+              </span>
+              <p className="text-xs text-white/80">Recent Clients</p>
             </div>
           </div>
         </div>
 
         {/* Right Side */}
-        <div className="mr-[50px] right-content flex justify-between items-start gap-3 w-[50%]">
+        <div
+          className="mr-[50px] right-content flex justify-between
+         items-start gap-6 w-[50%]"
+        >
           <img
             src={images}
             alt="Hero"

@@ -5,12 +5,13 @@ const Journey = () => {
         <div className="glow z-100"></div>
         <div className="glow-editting glow"></div>
 
-        <h2 className=" text-4xl text-center p-2 mt-9 tracking-widest capitalize mb-9 gradient-text">
+        <h2 className=" text-2xl md:text-4xl text-center
+         p-2 mt-9 tracking-widest capitalize mb-3 md:mb-9 gradient-text">
           My Academic and professional journey
         </h2>
-        <div className="mx-[50px] flex justify-center gap-8">
+        <div className="md:mx-[50px] mx-[20px] flex justify-center gap-4 md:gap-8">
           <div className="edu w-[50%]  gap-3 flex flex-col mb-3">
-            <h3 className="p-2 text-2xl text-center text-white/70 ">
+            <h3 className="p-2 text-lg md:text-2xl text-center text-white/70 ">
               Education
             </h3>
             <div className="card bg-white/10 py-5 w-[100%] px-4 ">
@@ -51,7 +52,7 @@ const Journey = () => {
             </div>
           </div>
           <div className="achievements w-[50%] gap-3 flex flex-col mb-3">
-            <h3 className="p-2 text-2xl text-center text-white/70">
+            <h3 className="p-2 text-lg md:text-2xl text-center text-white/70">
               Achievements
             </h3>
             <div className="card bg-white/10 py-3 w-[100%] px-4">

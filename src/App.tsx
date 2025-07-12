@@ -3,6 +3,7 @@ import EmblaCarousel from "./components/carousel";
 import Hero from "./components/Hero";
 import Journey from "./components/Journey";
 import Skills from "./components/Skills";
+// import TechStack from "./components/TechStack"
 import type { EmblaOptionsType } from "embla-carousel";
 import {
   SiHtml5,
@@ -26,6 +27,7 @@ import {
 import { BiLogoVisualStudio } from "react-icons/bi";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import TechStack from './components/TechStack';
 
 export const instance = axios.create({
   baseURL: "https://malaksabry2.pythonanywhere.com/api/",
@@ -38,20 +40,30 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
 const App = () => {
   const [certs, setCerts] = useState([]);
-
   useEffect(() => {
     instance.get("P/certificates/").then((res) => {
       setCerts(res.data);
     });
   }, []);
+   useEffect(() => {
+    document.title = "Malak | Personal Portfolio"; 
+  }, []);
+
   return (
     <>
-      <h1 className="pt-[110px] hello-text uppercase text-center text-8xl relative top-[-20px] text-transparent">
+      <h1
+        className="pt-[75px] md:pt-[110px] md:mb-1 mb-7 hello-text uppercase text-center text-6xl md:text-8xl
+       relative top-[-20px] text-transparent"
+      >
         hello
       </h1>
       <Hero />
+
+      
+
       <About />
       <EmblaCarousel slides={certs} options={OPTIONS} />
+{/* <TechStack/> */}
       <Skills
         skills={[
           { name: "HTML", icon: <SiHtml5 /> },

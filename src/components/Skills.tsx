@@ -10,7 +10,7 @@ const Skills = ({skills}:Props) => {
   return (
     <>
       <section id="skills">
-        <div className="cards  mx-[50px] grid grid-cols-4 gap-3 ">
+        <div className="cards  mx-[50px] grid grid-cols-1 md:grid-cols-4 gap-3 ">
           {skills.map((skill, index) => (
             <div
               key={index}

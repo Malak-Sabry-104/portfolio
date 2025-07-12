@@ -132,15 +132,14 @@
 .bg-gradient {
   background: linear-gradient(90deg, #614385, #516395, rgba(139, 92, 246, 0.2));
 }
-button {
+.nav-btn {
   transition: all ease-in-out 0.4s;
 }
 
 /* glow bg */
 .glow {
   position: absolute;
-  top: 60%;
-  left: 60%;
+  @apply md:top-[50%] md:left-[50%];
   transform: translate(-50%, -50%);
   width: 380px;
   height: 380px;
@@ -151,12 +150,11 @@ button {
   );
   filter: blur(60px);
 }
+
+
+
 /* nav style */
-nav img {
-  width: 90px;
-  /* padding: 10px; */
-}
-nav button:hover {
+nav .nav-btn:hover {
   transform: scale(1.01);
   box-shadow: 0 4px 10px rgba(23, 23, 23, 0.4);
 }
@@ -254,8 +252,8 @@ nav a::after {
   height: 280px;
 }
 #contact-form .glow {
-  top: 70%;
-  left: 80%;
+  top: 80%;
+  left: 25%;
 }
 #contact-form .glow-editting {
   top: 40%;
@@ -305,4 +303,34 @@ nav a::after {
     /* gradient border */
       linear-gradient(90deg, #614385, #516395, rgba(139, 92, 246, 0.5))
       border-box;
+}
+/* sm (640px+) - Large phones */
+@media (max-width: 40rem) {
+  #hero {
+    flex-direction: column;
+  }
+  #hero .left-side {
+    width: 100%;
+    align-items: center;
+    margin: 0;
+  }
+  #hero .btns-group {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 50px;
+  }
+  #hero .btns-group button {
+    width: 100%;
+  }
+    #hero .btns-group a {
+text-align: center;  }
+  #hero .client-card {
+    width: 69%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  #hero .count-info p {
+    font-size: 13px;
+  }
 }

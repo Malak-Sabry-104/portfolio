@@ -20,7 +20,7 @@ const ContactForm = () => {
       id="contact-form"
       className=" flex justify-center  items-center p-4 pt-[8rem]"
     >
-      <div className="glow"></div>
+      <div className="glow "></div>
 
       <form
         method="post"
@@ -78,7 +78,7 @@ const ContactForm = () => {
             className="bg-white/20  rounded-xl px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-700 placeholder:text-white/70"
             placeholder="Type your message here..."
             minLength={10}
-            {...register("message", {required: true, minLength: 10})}
+            {...register("message", { required: true, minLength: 10 })}
           ></textarea>
           {errors.message?.type === "required" && (
             <p className="text-sm px-2 py-1 text-red-500">

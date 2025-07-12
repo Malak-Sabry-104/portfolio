@@ -1,7 +1,7 @@
 import { Mail } from "lucide-react";
 import { MapPin } from "lucide-react";
 import { Github, Linkedin } from "lucide-react";
-import { HashLink } from 'react-router-hash-link';
+import { HashLink } from "react-router-hash-link";
 
 import footerVideo from "../assets/blackhole.webm";
 import { toast } from "react-toastify";
@@ -9,21 +9,25 @@ import { toast } from "react-toastify";
 const Footer = () => {
   return (
     <>
-      <section id="footer" className="relative flex items-end mt-100">
+      <section
+        id="footer"
+        className="relative flex items-end mt-100 2xl:mt-200"
+      >
         <video
           autoPlay
           loop
           muted
-          className="z-90 w-[100%] object-cover h-[80vh] absolute "
+          className="z-90 w-[100%] object-cover h-[80vh] absolute 2xl:h-[60vh] hidden lg:block"
         >
           <source src={footerVideo} type="video/webm" />
         </video>
-        <footer className="flex flex-col  gap-7 justify-center items-center overflow-hidden w-[100%] ">
+        <footer className="flex flex-col flex-wrap gap-7
+         justify-center items-center overflow-hidden w-[100%] ">
           <div
-            className=" flex justify-between px-[60px]  z-100 
-           bg-[#030014]/10 pt-4 w-[90%] mx-[50px]  backdrop-blur-xl "
+            className=" flex justify-between  flex-col md:flex-row z-100 
+           bg-[#030014]/10 pt-4 pl-0 w-full lg:w-[90%] lg:mx-[50px] px-4 lg:px-0  backdrop-blur-xl "
           >
-            <div className="left">
+            <div className="left mb-4">
               <h4 className="text-lg font-semibold my-1 capitalize text-white">
                 Malak
               </h4>
@@ -35,7 +39,7 @@ const Footer = () => {
                 Thanks for stopping, bye!
               </span>
             </div>
-            <div className="cen1">
+            <div className="cen1  mb-4">
               <ul className=" ">
                 <h4 className="text-lg font-semibold my-1 capitalize text-white">
                   {" "}
@@ -51,19 +55,25 @@ const Footer = () => {
                   className=" hover:text-purple-400 transition-transform
                  hover:scale-105 list-none mb-1 text-white/60 text-md capitalize hover:underline"
                 >
-                  <HashLink to="/#about" smooth={true}>About</HashLink>
+                  <HashLink to="/#about" smooth={true}>
+                    About
+                  </HashLink>
                 </li>
                 <li
                   className=" hover:text-purple-400 transition-transform 
                 hover:scale-105  list-none mb-1 text-white/60 text-md capitalize hover:underline"
                 >
-                  <HashLink to="/#projects" smooth={true}>Projects</HashLink>
+                  <HashLink to="/projects" smooth={true}>
+                    Projects
+                  </HashLink>
                 </li>
                 <li
                   className=" hover:text-purple-400 transition-transform 
                 hover:scale-105 hover:underline list-none mb-1 text-white/60 text-md capitalize"
                 >
-                  <HashLink to="/contact" smooth={true}>Contact</HashLink>
+                  <HashLink to="/contact" smooth={true}>
+                    Contact
+                  </HashLink>
                 </li>
               </ul>
             </div>
@@ -78,7 +88,9 @@ const Footer = () => {
                  text-sm my3 text-white/60 py-1 mb-2"
                 >
                   <Mail />
-                  <a href="#">example@gmail.com</a>
+                  <a href="mailto:malaksabry1020@gmail.com">
+                    malaksabry1020@gmail.com
+                  </a>
                 </div>
                 <div
                   className="cursor-pointer hover:text-purple-400 transition-transform hover:scale-102
@@ -117,13 +129,15 @@ const Footer = () => {
           </div>
 
           <div
-            className=" flex justify-between px-[20px] pt-1 border-t-1 border-t-white/30  z-100 
-          w-[80%]  mx-[50px] pb-3  text-white/60 "
+            className=" flex flex-col lg:flex-row px-[20px] pt-1
+             border-t-1 border-t-white/30  z-100 
+          w-[80%]  mx-[50px] pb-3  text-white/60
+           justify-center items-center lg:justify-between lg:items-start"
           >
-            <p className="capitalize">
+            <p className="capitalize text-xs py-2">
               &copy; 2025 Malak | portfolio. All rights reversed.
             </p>
-            <div className="capitalize flex gap-7">
+            <div className="capitalize flex gap-7 text-xs ">
               <a
                 href="#"
                 className="hove:underline"
@@ -135,9 +149,13 @@ const Footer = () => {
                 Privacy Policy{" "}
               </a>
 
-              <a href="#" className="hove:underline"   onClick={() => {
+              <a
+                href="#"
+                className="hove:underline"
+                onClick={() => {
                   toast.dark("Coming Soon!");
-                }}>
+                }}
+              >
                 {" "}
                 Terms Of Services{" "}
               </a>

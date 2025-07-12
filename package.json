@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build && copy _redirects dist\\",
     "lint": "eslint .",
     "preview": "vite preview",
@@ -12,10 +12,12 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@raulcanodev/react-github-dots": "^1.1.55",
     "@tailwindcss/vite": "^4.1.10",
     "axios": "^1.10.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
     "embla-carousel-auto-scroll": "^8.6.0",
     "embla-carousel-react": "^8.6.0",
     "github-calendar": "^2.3.4",
@@ -23,6 +25,7 @@
     "lucide-react": "^0.523.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-github-calendar": "^4.5.9",
     "react-hook-form": "^7.51.2",
     "react-icons": "^5.5.0",
     "react-router-dom": "^7.6.3",
