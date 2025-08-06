@@ -5,7 +5,7 @@ import App from "./App";
 import ContactForm from "./components/ContactForm";
 import ErrorPage from "./components/ErrorPage";
 import Projects from "./components/Projects";
-
+import './index.css'
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
