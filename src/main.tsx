@@ -1,16 +1,15 @@
+import Layout from "./components/Layout"; // your Layout component (the one you just shared)
 import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import { BrowserRouter, Route, Routes } from "react-router";
-import { HashRouter as Router } from "react-router-dom";
-import "./index.css";
-import App from "./App.tsx";
-import ErrorPage from "./components/ErrorPage.tsx";
-import ContactForm from "./components/ContactForm.tsx";
-import Layout from "./components/Layout.tsx";
-import Projects from "./components/Projects.tsx";
+import { createRoot } from "react-dom/client";import { HashRouter, Route, Routes } from "react-router-dom"; // ✅ Already imported as Router, but let's make it clearer
+import App from "./App";
+import ContactForm from "./components/ContactForm";
+import ErrorPage from "./components/ErrorPage";
+import Projects from "./components/Projects";
+
+
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route element={<App />} index />
@@ -19,6 +18,6 @@ createRoot(document.getElementById("root")!).render(
           <Route element={<ErrorPage />} path="*" />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>
 );

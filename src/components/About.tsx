@@ -3,6 +3,9 @@ import images from "../assets/photo_6021628713059338622_y.jpg";
 import { HashLink } from "react-router-hash-link";
 
 const About = () => {
+  const openPDF = () => {
+  window.open("../assets/Malak Sabry CV.pdf", "_blank");
+};
   return (
     <>
       <section id="about" className="mt-[100px] ">
@@ -55,9 +58,8 @@ const About = () => {
             <div className="flex justify-center  items-center  gap-10 mt-9">
               <button
                 className=" text-xs md:text-sm bg-gradient md:px-3 px-5 md:py-2 py-1 rounded-xl backdrop-blur-md text-purple-100 ring-1 ring-purple-300/30 hover:scale-[1.04] shadow-md  cursor-pointer"
-                onClick={() => {
-                  toast.dark("Coming Soon");
-                }}
+                onClick={openPDF}
+                  
               >
                 Download CV
               </button>
