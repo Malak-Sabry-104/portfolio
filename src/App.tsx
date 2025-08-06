@@ -40,8 +40,7 @@ const App = () => {
 
       <About />
       <Journey />
-
-      {certs.length > 0 && <EmblaCarousel slides={certs} options={OPTIONS} />}
+       <EmblaCarousel slides={certs} options={OPTIONS} />
       <Skills />
     </>
   );

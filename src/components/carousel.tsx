@@ -59,7 +59,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
 
   return (
     <>
-      <div className="embla  mt-[19rem] mx-auto relative">
+      <div className="embla  mx-auto relative">
         <h1 className="text-center text-4xl font-semibold mb-9 ">
           My Certificates
         </h1>
