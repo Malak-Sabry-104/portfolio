@@ -24,8 +24,8 @@ const App = () => {
       setCerts(res.data);
     });
   }, []);
-   useEffect(() => {
-    document.title = "Malak | Personal Portfolio"; 
+  useEffect(() => {
+    document.title = "Malak | Personal Portfolio";
   }, []);
 
   return (
@@ -38,14 +38,11 @@ const App = () => {
       </h1>
       <Hero />
 
-      
-
       <About />
-            <Journey />
+      <Journey />
 
-      <EmblaCarousel slides={certs} options={OPTIONS}  />
-<Skills/>
-    
+      {certs.length > 0 && <EmblaCarousel slides={certs} options={OPTIONS} />}
+      <Skills />
     </>
   );
 };
